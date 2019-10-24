@@ -18,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/bmurdock/promises/issues"
   },
-  "homepage": "https://github.com/bmurdock/promises#readme"
+  "homepage": "https://github.com/bmurdock/promises#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.0"
+  }
 }
