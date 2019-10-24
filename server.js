@@ -3,9 +3,9 @@ const port = process.env.PORT || 3333;
 
 const server = express();
 
-server.use(express.json());
+server.use(express.static('public'));
 
-server.get('/user.json', (req, res) => {
+server.get('/user.json', express.json(), (req, res) => {
     res.set({
         'Accept': 'application.json',
         'Conent-Type': 'application/json'
