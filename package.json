@@ -1,0 +1,22 @@
+{
+  "name": "promises",
+  "version": "1.0.0",
+  "description": "Practice with callbacks and promises",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bmurdock/promises.git"
+  },
+  "keywords": [
+    "callback"
+  ],
+  "author": "Brian Murdock",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bmurdock/promises/issues"
+  },
+  "homepage": "https://github.com/bmurdock/promises#readme"
+}
