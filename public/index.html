@@ -11,7 +11,21 @@
     <h1>Promising Playground</h1>
 
     <script>
-        console.log('type: ', typeof loadStyle);
+        loadStyle("css/special.css");
+        /*
+        loadScript('js/example.js', function () {
+            document.body.appendChild(Circle());
+        });
+        */
+
+        promiseScript('js/example.js')
+            .then((script) => {
+                document.body.appendChild(Circle());
+                document.body.appendChild(Circle());
+                document.body.appendChild(Circle());
+                document.body.appendChild(Circle());
+            });
+
     </script>
 </body>
 
