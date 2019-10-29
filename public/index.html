@@ -11,7 +11,23 @@
     <h1>Promising Playground</h1>
 
     <script>
-        loadStyle("css/special.css");
+        loadStyle("css/special.css", function (err, result) {
+            if (err) {
+                console.log('loadstyle gave us an error: ', err);
+            }
+            console.log("the result is: ", result);
+            setTimeout(function () {
+                result.href = "broken.css";
+            }, 2000);
+        });
+
+        promiseStyle("css/special.css")
+            .then((script) => {
+                console.log('Your file was loaded! I promise...', script);
+            })
+            .catch((err) => {
+                console.error("Ooops: ", err);
+            });
         /*
         loadScript('js/example.js', function () {
             document.body.appendChild(Circle());
